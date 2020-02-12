@@ -41,5 +41,16 @@ const  handleUserInput =  (key) => {
       connection.write("Move: right" )
     }, 100);
   }
+    if (key === 'z') {
+      setTimeout(() => { 
+      connection.write("Say: bruh" )
+    }, 100);
+  }
+    if (key === 'x') {
+      setTimeout(() => { 
+      connection.write("Say: smash" )
+    }, 100);
+  }
+
  };
 module.exports = setupInput;
