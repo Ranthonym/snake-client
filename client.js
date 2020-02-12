@@ -13,8 +13,9 @@ const connect = function() {
   conn.setEncoding('utf8'); 
 
   conn.on('connect', () => {
-    console.log('connected to game');
-  })
+    console.log("Successfully connected to game server");
+    conn.write("Name: RAM");
+  });
   // function to attach an event handler to handle incoming data and console log it for the player.
   conn.on('data', (data) => {
     console.log('game says: ', data);
